@@ -9,6 +9,7 @@ const vec4 highlight = vec4(1,1,1,1);
 const vec4 mid_value = vec4(1,1,1,0.5);
 const vec4 low_value = vec4(1,1,1,0.1);
 
+////////////////////////////////////////////////////////////////
 // Code for the fractal brownian motion with 2d noise texture
 // https://godotshaders.com/snippet/fractal-brownian-motion-fbm/
 float random(vec2 uv) {
@@ -47,7 +48,7 @@ float fbm(vec2 uv) {
     }
     return value;
 }
-
+/////////////////////////////////////////////////////////
 
 vec4 evaluate(vec2 uv){
 	float tex = fbm(uv);
@@ -65,10 +66,6 @@ vec4 evaluate(vec2 uv){
 	
 	return col;
 }
-
-
-
-
 
 void fragment(){
 	vec2 uv;

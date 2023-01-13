@@ -25,6 +25,7 @@ vec3 normalize_rgb(vec3 color){
 	return (((color - OldMin) * (NewMax - NewMin)) / (OldMax - OldMin)) + NewMin;
 }
 
+////////////////////////////////////////////////////////////////
 // Code for the fractal brownian motion with 2d noise texture
 // https://godotshaders.com/snippet/fractal-brownian-motion-fbm/
 float random(vec2 uv) {
@@ -63,7 +64,7 @@ float fbm(vec2 uv) {
     }
     return value;
 }
-
+////////////////////////////////////////////////
 
 vec4 evaluate(vec2 uv){
 	float tex = fbm(uv);
@@ -94,9 +95,6 @@ vec4 evaluate(vec2 uv){
 	
 	return vec4(col,1.);
 }
-
-
-
 
 
 void fragment(){
