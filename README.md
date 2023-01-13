@@ -6,3 +6,5 @@ This project is the recreation of procedural terrain generation first made by [@
 with blender. 
 
 Made with godot game engine and glsl shaders. Fully procedural.
+
+[Demo on twitter](https://twitter.com/CoderTatva/status/1613866502633172993)
