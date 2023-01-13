@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=2]
+
+[ext_resource path="res://Tropical Islands.gdshader" type="Shader" id=1]
+
+[resource]
+shader = ExtResource( 1 )
+shader_param/scale = 0.1
+shader_param/octaves = 10
+shader_param/speed = Vector2( 1, 1 )
+shader_param/pixelSize = 256
